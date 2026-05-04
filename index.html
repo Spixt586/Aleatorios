@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src = "aleatorios.js"></script>
-    <script src = "utilitarios.js"></script>
+    <title>Generador Aleatorio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aleatorios.css">
+    <script src="aleatorios.js"></script>
+    <script src="utilitarios.js"></script>
 </head>
 <body>
-    <input type="number" placeholder="Ingrese un numero" id="txtNum" min = 5 max = 20>
-    <br><p id = "mensajeAleatorios"></p>
-    <button onclick = "generarAleatorios()">Prueba Aleatorios</button>
-    <div id = "contenedorTabla">
-        <table>
-            <tr>
-                <td></td>
-            </tr>
-        </table>
+
+    <div class="wrapper">
+
+        <header class="header">
+            <h1>Generador</h1>
+            <p class="subtitle">// Números Aleatorios //</p>
+        </header>
+
+        <div class="card">
+            <label class="field-label" for="txtNum">Cantidad [ 5 – 20 ]</label>
+            <input type="number" placeholder="Ingrese un número" id="txtNum" min="5" max="20">
+            <p id="mensajeAleatorios"></p>
+            <button onclick="generarAleatorios()">Generar Aleatorios</button>
+        </div>
+
+        <div id="contenedorTabla"></div>
+
     </div>
+
 </body>
 </html>
